@@ -227,15 +227,6 @@ namespace BusinessLayer.Tests
         [Fact]
         public void TakeBookShouldGiveBookToReader()
         {
-            library.TakeBook("111", "1", DateTime.Now.AddDays(1));
-            dataMock.Verify(
-                x => x.Save(It.IsAny<List<Book>>()),
-                Times.Once);
-        }
-
-        [Fact]
-        public void TakeBookShouldSetReaderIdReturnDateAndIsTaken()
-        {
             library.TakeBook("111", "1", DateTime.Now.AddDays(1).Date);
             Assert.Contains(library.ListBooks(), b => 
                 b.ReaderId == "1" && 
