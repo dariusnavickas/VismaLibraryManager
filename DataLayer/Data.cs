@@ -11,15 +11,7 @@ namespace DataLayer
 
         public Data(string filename)
         {
-            Filename = filename;
-        }
-
-        private string Filename
-        {
-            init
-            {
-                _filename = value;
-            }
+            _filename = filename;
         }
 
         public List<Book> Load()
