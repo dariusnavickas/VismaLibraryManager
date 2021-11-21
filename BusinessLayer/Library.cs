@@ -51,15 +51,7 @@ namespace BusinessLayer
             if (DoesBookExist(isbn))
                 throw new BookAlreadyExistsWithTheSameIsbnException(bookExistsWithSameIsbn);
 
-            _books.Add(new Book(name, author, category, language, year, isbn)
-            {
-                Name = name,
-                Author = author,
-                Category = category,
-                Language = language,
-                PublicationYear = year,
-                ISBN = isbn
-            });
+            _books.Add(new Book(name, author, category, language, year, isbn));
             _data.Save(_books);
         }
 
