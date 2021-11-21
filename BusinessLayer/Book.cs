@@ -5,17 +5,6 @@ namespace BusinessLayer
 {
     public class Book
     {
-        string _name;
-        string _author;
-        string _category;
-        string _language;
-        ushort _publicationYear;
-        string _isbn;
-
-        bool _isTaken;
-        string _readerId;
-        DateTime _returnDate;
-
         [JsonConstructor]
         public Book(string name, string author, string category, string language, ushort publicationYear, string isbn)
         {
@@ -43,85 +32,22 @@ namespace BusinessLayer
             ReturnDate = new DateTime();
         }
 
-        public string Name
-        {
-            get => _name;
-            init
-            {
-                if (!string.IsNullOrWhiteSpace(value)) _name = value;
-            }
-        }
+        public string Name { get; }
 
-        public string Author
-        {
-            get => _author;
-            init
-            {
-                if (!string.IsNullOrWhiteSpace(value)) _author = value;
-            }
-        }
+        public string Author { get; }
 
-        public string Category
-        {
-            get => _category;
-            init
-            {
-                if (!string.IsNullOrWhiteSpace(value)) _category = value;
-            }
-        }
+        public string Category { get; }
 
-        public string Language
-        {
-            get => _language;
-            init
-            {
-                if (!string.IsNullOrWhiteSpace(value)) _language = value;
-            }
-        }
+        public string Language { get; }
 
-        public ushort PublicationYear
-        {
-            get => _publicationYear;
-            init
-            {
-                _publicationYear = value;
-            }
-        }
+        public ushort PublicationYear { get; }
 
-        public string ISBN
-        {
-            get => _isbn;
-            init
-            {
-                if (!string.IsNullOrWhiteSpace(value)) _isbn = value;
-            }
-        }
+        public string ISBN { get; }
 
-        public bool IsTaken
-        {
-            get => _isTaken;
-            set
-            {
-                _isTaken = value;
-            }
-        }
+        public bool IsTaken { get; set; }
 
-        public string ReaderId
-        {
-            get => _readerId;
-            set
-            {
-                _readerId = value;
-            }
-        }
+        public string ReaderId { get; set; }
 
-        public DateTime ReturnDate
-        {
-            get => _returnDate;
-            set
-            {
-                _returnDate = value;
-            }
-        }
+        public DateTime ReturnDate { get; set; }
     }
 }
