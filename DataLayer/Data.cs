@@ -1,7 +1,7 @@
-﻿using Newtonsoft.Json;
+﻿using BusinessLayer;
+using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.IO;
-using BusinessLayer;
 
 namespace DataLayer
 {

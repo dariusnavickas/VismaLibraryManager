@@ -1,9 +1,8 @@
-﻿using ConsoleTables;
+﻿using BusinessLayer;
+using ConsoleTables;
+using DataLayer;
 using System;
 using System.Collections.Generic;
-using System.Text;
-using BusinessLayer;
-using DataLayer;
 using System.Threading;
 
 namespace UiLayer

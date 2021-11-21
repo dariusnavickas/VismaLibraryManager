@@ -1,8 +1,8 @@
 using Moq;
 using System;
 using System.Collections.Generic;
-using Xunit;
 using System.Linq;
+using Xunit;
 
 namespace BusinessLayer.Tests
 {
