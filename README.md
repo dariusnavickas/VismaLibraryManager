@@ -10,9 +10,9 @@
         <li>Category</li>
         <li>Language</li>
         <li>Publication date</li>
-        <li>SBN</li>
+        <li>ISBN</li>
     </ul>
-    <li>Command to take a book from the library</li>
+    <li>Command to take a book from the library:</li>
     <ul>
         <li>The command should specify:</li>
         <ul>
@@ -22,7 +22,7 @@
         <li>Taking the book longer than two months should not be allowed</li>
         <li>Taking more than 3 books should not be allowed</li>
     </ul>
-    <li>Command to return a book.</li>
+    <li>Command to return a book:</li>
     <ul>
         <li>If a return is late you could display a funny message :)</li>
     </ul>
@@ -35,7 +35,7 @@
         <li>Filter by name</li>
         <li>Filter taken or available books</li>
     </ul>
-    <li>Command to delete a book.</li>
+    <li>Command to delete a book</li>
 </ul>
 <p>
     Focus on good code design and good practices, UI design should be minimalistic and simple.
